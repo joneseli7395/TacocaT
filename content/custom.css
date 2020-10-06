@@ -1,0 +1,38 @@
+﻿body {
+    color: #fff;
+    background: linear-gradient(45deg, #808080, #97b96b);
+    display:block
+}
+
+
+.intro {
+    border: solid #97b96b 1px;
+    background-color: #343a40;
+    padding-bottom: 20px;
+    border-radius: 50px 50px 50px 50px;
+    margin-top: 20px;    
+}
+.icofont-cat-face {
+    color:#fff
+}
+
+.palin {
+    font-weight: bold
+}
+
+.spacing {
+    padding:20px 15px 0 15px;
+}
+
+.how {
+    padding-top:50px;
+}
+
+.mainRow {
+    min-height: 350px;
+    max-height: 350px
+}
+
+.title {
+    padding-top: 20px
+}
