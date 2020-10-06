@@ -16,12 +16,12 @@
     color:#fff
 }
 
-.palin {
-    font-weight: bold
+.spacing1 {
+    padding:25px 15px 15px 25px;
 }
 
-.spacing {
-    padding:20px 15px 0 15px;
+.spacing2 {
+    padding: 20px 15px 0 25px;
 }
 
 .how {
