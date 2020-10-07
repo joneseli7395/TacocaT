@@ -80,6 +80,7 @@
     <Content Include="images\favicon-16x16.png" />
     <Content Include="images\favicon-32x32.png" />
     <Content Include="images\favicon.ico" />
+    <Content Include="images\languages.png" />
     <Content Include="images\meowth.png" />
     <Content Include="images\tacocat.png" />
     <Content Include="images\tacos.png" />

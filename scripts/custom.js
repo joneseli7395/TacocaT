@@ -1,7 +1,9 @@
 ﻿document.getElementById("flipBtn").addEventListener('click', function () {
     //Input data
     let inputWord = document.getElementById("reverseStr").value;
-
+    //.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]|\s/gi, '')
+    // in regex, | = or. || = or everywhere else 
+    //replace(/[^A-Za-z0-9]/g, '')
     //Do something with data
     let lowerInput = inputWord.toLowerCase();
     let reverseWord = ""
@@ -14,7 +16,7 @@
     for (let loop = inputWord.length - 1; loop >= 0; loop--) {
         reverseWord += lowerInput.charAt(loop);
     }
-    let otherReverse = lowerInput.split("").reverse().join("");
+    //let otherReverse = lowerInput.split("").reverse().join("");
 
     //Output new data
 
