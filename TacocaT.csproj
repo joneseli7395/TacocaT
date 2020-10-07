@@ -88,6 +88,7 @@
     <Content Include="fonts\boxicons.woff2" />
     <Content Include="content\fonts\icofont.woff" />
     <Content Include="content\fonts\icofont.woff2" />
+    <Content Include="images\site.webmanifest" />
     <None Include="scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="scripts\bootstrap.bundle.min.js" />
     <Content Include="scripts\bootstrap.min.js" />
