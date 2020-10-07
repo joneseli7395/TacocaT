@@ -23,6 +23,7 @@
     <link href="content/boxicons.min.css" rel="stylesheet" />
     <link href="content/bootstrap-grid.min.css" rel="stylesheet" />
     <link href="content/bootstrap.min.css" rel="stylesheet" />
+    <link href="content/prism.css" rel="stylesheet" />
 
     <!--Custom CSS-->
     <link href="content/custom.css" rel="stylesheet" />
@@ -56,8 +57,8 @@
                         <a target="_blank" class="nav-link" href="https://www.ejdevspot.com/"><i class="bx bx-male"></i>Portfolio</a>
                     </li>
                     <!--<li class="nav-item">
-                <a target="_blank" class="nav-link" href="#">Blog Post/YouTube Explanation</a>
-            </li>-->
+                        <a target="_blank" class="nav-link" href="#">Blog Post/YouTube Explanation</a>
+                    </li>-->
                 </ul>
             </div>
         </div>
@@ -69,10 +70,47 @@
             <div class="col-lg-12 text-center">
                 <h1 class="mt-5">The Code</h1>
                 <p class="lead">You need to use a Syntax Highlighter - Prism.js is default</p>
-                <ul class="list-unstyled">
-                    <li>Code with highlighter</li>
-                    <li>Will display on this page</li>
-                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <pre>
+<code class="language-js line-numbers">document.getElementById("flipBtn").addEventListener('click', function () {
+    //Input data
+    let inputWord=document.getElementById("reverseStr").value;
+
+    //Do something with data
+    let lowerInput = inputWord.toLowerCase();
+    let reverseWord = ""
+  
+    //.length - 1, otherwise out of execution range
+    for (let loop = inputWord.length - 1; loop >= 0; loop--) {
+            reverseWord += lowerInput.charAt(loop);
+    }
+    //let otherReverse = lowerInput.split("").reverse().join(""); **this performs the same as lines 16-18**
+
+    //Output new data
+
+    if (lowerInput === reverseWord) {
+        Swal.fire(
+            "Palindrome!",
+            "Nice! Try another!",
+            'success'
+        )
+    }
+    else {
+        Swal.fire(
+            "Not quite",
+            "Try again!",
+            'error'
+        )
+     }
+document.getElementById("reverseOutput").innerHTML = reverseWord;
+})
+</code>
+</pre>
             </div>
         </div>
     </div>
@@ -81,7 +119,7 @@
     <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
+    <script src="scripts/prism.js"></script>
 
 </body>
 

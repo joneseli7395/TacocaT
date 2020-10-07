@@ -12,6 +12,13 @@
     border-radius: 50px 50px 50px 50px;
     margin-top: 20px;    
 }
+
+.img {
+    padding-bottom: 20px;
+    border-radius: 50px 50px 50px 50px;
+    margin-top: 20px;
+}
+
 .icofont-cat-face {
     color:#fff
 }

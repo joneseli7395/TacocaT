@@ -74,6 +74,7 @@
     <Content Include="content\boxicons.min.css" />
     <Content Include="content\custom.css" />
     <Content Include="content\icofont.min.css" />
+    <Content Include="content\prism.css" />
     <Content Include="images\android-chrome-192x192.png" />
     <Content Include="images\android-chrome-512x512.png" />
     <Content Include="images\apple-touch-icon.png" />
@@ -100,6 +101,7 @@
     <Content Include="scripts\jquery-3.5.1.slim.min.js" />
     <Content Include="scripts\jquery.easing.min.js" />
     <Content Include="scripts\jquery.min.js" />
+    <Content Include="scripts\prism.js" />
     <Content Include="solve.html" />
     <Content Include="Web.config" />
   </ItemGroup>
