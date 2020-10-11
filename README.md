@@ -8,3 +8,5 @@ The "Code" page will display the JavaScript code used to build the function used
 
 ***Note:***
 - The code snippet displayed on the Code page is powered by [PrismJS](https://prismjs.com/)
+
+***For any questions or unaddressed issues found, use the contact form located at the bottom of my [portfolio](https://www.ejdevspot.com/) page to get in touch with me.***
