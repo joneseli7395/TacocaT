@@ -38,7 +38,7 @@ document.getElementById("userInput").addEventListener('keydown', function (evt) 
 
     var character = (evt.which) ? evt.which : evt.keycode;
     if (character >= 97 && character <= 122 ||
-        character >= 65 && charcter <= 90 ||
+        character >= 65 && character <= 90 ||
         character === 8 || character === 32) {
 
         return true;
