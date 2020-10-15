@@ -1,32 +1,19 @@
 ﻿document.getElementById("flipBtn").addEventListener('click', function () {
-    //Input data
-    let inputWord = document.getElementById("reverseStr").value;
-    //.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]|\s/gi, '')
-    // in regex, | = or. || = or everywhere else
-    //replace(/[^A-Za-z0-9]/g, '')
-    //Do something with data
-    let lowerInput = inputWord.toLowerCase();
-    let reverseWord = ""
+    let regex = /[\W_]/g;
+    let userInput = document.getElementById("userInput").value;
+
+    let lowerInput = userInput.toLowerCase().replace(regex, '');
+    let reverseIn = lowerInput.split('').reverse().join('');
 
 
-    //A string is an array of characters
-    //string word = [w][o][r][d]
-    //               0  1  2  3
-    //.length - 1, otherwise out of execution range
-    for (let loop = inputWord.length - 1; loop >= 0; loop--) {
-        reverseWord += lowerInput.charAt(loop);
-    }
-    //let otherReverse = lowerInput.split("").reverse().join(""); **this performs the same as lines 16-18**
-
-    //Output new data
-
-    if (lowerInput === reverseWord) {
+    if (reverseIn === lowerInput) {
         Swal.fire(
             "Palindrome!",
             "Nice! Try another!",
             'success'
         )
     }
+
     else {
         Swal.fire(
             "Not quite",
@@ -34,10 +21,20 @@
             'error'
         )
     }
-    document.getElementById("reverseOutput").innerHTML = reverseWord;
+
+    if (reverseIn == "") {
+        Swal.fire(
+            "Error",
+            "Please enter a word or phrase"
+        )
+    }
+
+    //Output new data
+
+    document.getElementById("output").innerHTML = reverseIn;
 })
 
-document.getElementById("reverseStr").addEventListener('keydown', function (evt) {
+document.getElementById("userInput").addEventListener('keydown', function (evt) {
 
     var character = (evt.which) ? evt.which : evt.keycode;
     if (character >= 97 && character <= 122 ||
